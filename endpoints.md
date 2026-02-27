@@ -6,6 +6,7 @@ curl -X POST http://localhost:5000/2015-03-31/functions/function/invocations -d 
 
 
 docker run -p 5000:8080 tinygpt-api
+docker build --platform linux/amd64 --provenance=false -t tinygpt-api:2026-02-27 .
 
 
 aws lambda:
